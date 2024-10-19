@@ -11,8 +11,8 @@ interface Props {
 
 export const CommentItem: FC<Props> = ({ comment, level = 0 }) => {
     return (
-        <div className="flex flex-col gap-2 items-center">
-            <div className="flex flex-row items-center bg-white rounded-md gap-6 p-6">
+        <div className="flex w-full flex-col gap-2 items-center">
+            <div className="flex w-full flex-row items-center bg-white rounded-md gap-6 p-6">
                 <CommentItemScoreSwitcher score={comment.score}/>
                 <CommentItemContent {...comment}/>
             </div>

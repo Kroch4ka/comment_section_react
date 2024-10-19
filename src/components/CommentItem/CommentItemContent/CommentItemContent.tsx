@@ -4,7 +4,7 @@ import ReplyIcon from "../../../assets/images/icon-reply.svg?react"
 
 export const CommentItemContent: FC<Comment> = (comment: Comment) => {
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex w-full flex-col gap-4">
             <div className="flex flex-row items-center justify-between">
                 <div className="flex items-center flex-row gap-4">
                     <img className="max-w-8" src={comment.user.image.webp}/>
@@ -16,7 +16,7 @@ export const CommentItemContent: FC<Comment> = (comment: Comment) => {
                     <span>Reply</span>
                 </div>
             </div>
-            <div className="text-left">
+            <div className="text-left break-all">
                 {comment.content}
             </div>
         </div>
